@@ -8,7 +8,8 @@ import re
 from src.validation.schema_validator import validate_artifact
 
 ARTICLE_ROOT = Path(__file__).resolve().parents[2]
-REVIEW_ROOT = ARTICLE_ROOT / "reviews/10_each_lore"
+REVIEW_ROOT = ARTICLE_ROOT / "reviews/active/10_each_lore"
+LEGACY_REVIEW_ROOT = ARTICLE_ROOT / "reviews/10_each_lore"
 SCHEMA_ROOT = ARTICLE_ROOT / "docs/10_each_lore/0000_tutorial/schemas"
 SCHEMAS = {
     "00": "review_00_sources.schema.json",
@@ -37,7 +38,17 @@ class ReviewSnapshot:
 
 
 def load_entry_review_state(entry_id: str) -> ReviewSnapshot:
-    directory = REVIEW_ROOT / entry_id
+    """Read only current-Epoch reviews, never reinterpret legacy verdicts."""
+    return _load_reviews(entry_id, REVIEW_ROOT)
+
+
+def load_entry_legacy_review_state(entry_id: str) -> ReviewSnapshot:
+    """Historical archive; only for provenance/audit, never current PASS."""
+    return _load_reviews(entry_id, LEGACY_REVIEW_ROOT)
+
+
+def _load_reviews(entry_id: str, root: Path) -> ReviewSnapshot:
+    directory = root / entry_id
     if not directory.is_dir():
         return ReviewSnapshot(entry_id, {}, (), ())
 
