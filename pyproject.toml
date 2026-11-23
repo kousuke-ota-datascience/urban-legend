@@ -1,0 +1,16 @@
+[project]
+name = "urban-legend"
+version = "0.1.0"
+description = "Independent urban legend research workflow and orchestration"
+requires-python = ">=3.13"
+dependencies = [
+  "jsonschema==4.25.1",
+]
+
+[dependency-groups]
+dev = [
+  "pytest==9.0.3",
+]
+
+[tool.uv]
+package = false
