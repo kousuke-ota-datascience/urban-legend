@@ -1,0 +1,347 @@
+{
+  "schema_version": "1.0",
+  "entry_id": "0365",
+  "macro_category": "災害・流言",
+  "entry_type": "差別的災害流言",
+  "version_scope": {
+    "description": "1923年関東大震災直後、「朝鮮人が井戸へ毒を入れている」と虚偽に帰属した井戸投毒流言を主分析対象とする。",
+    "included_variants": [
+      "VAR-001"
+    ],
+    "excluded_variants": [
+      "VAR-002"
+    ],
+    "content_refs": [
+      "CNT-001",
+      "CNT-002",
+      "CNT-004"
+    ],
+    "notes": "Entry 0365の識別核である井戸投毒流言（VAR-001）のみをVersion Scopeに含める。放火・武装蜂起等の同時期関連流言（VAR-002）は派生関係が確認できないため除外する。反朝鮮人流言全般が現実の排斥・殺傷へ波及した事実（CNT-003）は重要な背景だが、井戸投毒流言単独の効果として直接分離できないため本ScopeのD10〜D19判定根拠には用いない。"
+  },
+  "dimensions": [
+    {
+      "dimension_id": "D01",
+      "status": "D",
+      "primary": {
+        "code_id": "D01.G1"
+      },
+      "secondary": [],
+      "rationale": "井戸投毒流言は1923年の関東大震災直後に記録される。",
+      "manifestation": "1868-1944。",
+      "content_refs": [
+        "CNT-001",
+        "CNT-002",
+        "CNT-004"
+      ],
+      "evidence_refs": [
+        "EVD-001",
+        "EVD-005"
+      ]
+    },
+    {
+      "dimension_id": "D02",
+      "status": "U",
+      "primary": null,
+      "secondary": [],
+      "rationale": "井戸投毒流言が最初にどの媒体・伝達経路で流通したかはScoped Contentから特定できない。",
+      "manifestation": "最古流通媒体不明。",
+      "content_refs": [
+        "CNT-001",
+        "CNT-002"
+      ]
+    },
+    {
+      "dimension_id": "D03",
+      "status": "U",
+      "primary": null,
+      "secondary": [],
+      "rationale": "井戸投毒流言の具体的な媒体ポートフォリオはScoped Contentから安全に確定できない。",
+      "manifestation": "流通媒体ポートフォリオ不明。",
+      "content_refs": [
+        "CNT-001",
+        "CNT-002"
+      ]
+    },
+    {
+      "dimension_id": "D04",
+      "status": "U",
+      "primary": null,
+      "secondary": [],
+      "rationale": "井戸投毒流言と放火・武装蜂起等の関連流言との派生関係は確認できず、VAR-002はScope外とした。VAR-001内部の変容系譜も確定できない。",
+      "manifestation": "変容・派生関係は未確定。",
+      "content_refs": [
+        "CNT-001",
+        "CNT-002"
+      ],
+      "evidence_refs": [
+        "EVD-005"
+      ]
+    },
+    {
+      "dimension_id": "D05",
+      "status": "D",
+      "primary": {
+        "code_id": "D05.PRP.FACT_CLAIM",
+        "parent_id": "D05.PRP"
+      },
+      "secondary": [],
+      "rationale": "「朝鮮人が井戸へ毒を入れている」という虚偽の事実主張として流通した。",
+      "manifestation": "虚偽の事実主張。",
+      "content_refs": [
+        "CNT-001"
+      ],
+      "evidence_refs": [
+        "EVD-005"
+      ]
+    },
+    {
+      "dimension_id": "D06",
+      "status": "D",
+      "primary": {
+        "code_id": "D06.T4"
+      },
+      "secondary": [],
+      "rationale": "井戸へ毒を入れているという現在進行の事実主張として提示された。",
+      "manifestation": "事実断定型の提示。",
+      "content_refs": [
+        "CNT-001"
+      ],
+      "evidence_refs": [
+        "EVD-005"
+      ]
+    },
+    {
+      "dimension_id": "D07",
+      "status": "D",
+      "primary": {
+        "code_id": "D07.ICT.OUTGROUP_THREAT",
+        "parent_id": "D07.ICT"
+      },
+      "secondary": [],
+      "rationale": "意味形成対象は、朝鮮人という特定の民族集団を井戸投毒の外集団脅威として捉える虚偽の解釈である。",
+      "manifestation": "外集団脅威。",
+      "content_refs": [
+        "CNT-001"
+      ],
+      "evidence_refs": [
+        "EVD-005"
+      ]
+    },
+    {
+      "dimension_id": "D08",
+      "status": "D",
+      "primary": {
+        "code_id": "D08.HIS.RECENT_INCIDENT",
+        "parent_id": "D08.HIS"
+      },
+      "secondary": [],
+      "rationale": "関東大震災直後の情報途絶や井戸水の濁り等の災害現象が流言形成の契機となった。",
+      "manifestation": "直近の災害事件。",
+      "content_refs": [
+        "CNT-001",
+        "CNT-002"
+      ],
+      "evidence_refs": [
+        "EVD-001",
+        "EVD-005"
+      ]
+    },
+    {
+      "dimension_id": "D09",
+      "status": "D",
+      "primary": {
+        "code_id": "D09.AGN.AGENCY_ATTRIBUTION",
+        "parent_id": "D09.AGN"
+      },
+      "secondary": [],
+      "rationale": "井戸水等の異常を、朝鮮人という意思ある人間集団が井戸へ毒を投入した結果だと虚偽に帰属する。複数主体の計画的協調はScoped Contentにないため仮定しない。",
+      "manifestation": "人間集団への主体帰属。",
+      "content_refs": [
+        "CNT-001",
+        "CNT-002"
+      ],
+      "evidence_refs": [
+        "EVD-001",
+        "EVD-005"
+      ]
+    },
+    {
+      "dimension_id": "D10",
+      "status": "D",
+      "primary": {
+        "code_id": "D10.HUM.INFORMAL_GROUP",
+        "parent_id": "D10.HUM"
+      },
+      "secondary": [],
+      "rationale": "流言内部では、朝鮮人という民族的属性で括られた人間集団が井戸へ毒を投入する主体として虚偽に置かれる。",
+      "manifestation": "特定民族集団を人間の加害主体として置く虚偽の因果帰属。",
+      "content_refs": [
+        "CNT-001"
+      ],
+      "evidence_refs": [
+        "EVD-005"
+      ]
+    },
+    {
+      "dimension_id": "D11",
+      "status": "U",
+      "primary": null,
+      "secondary": [],
+      "rationale": "井戸投毒という加害行為が起きているとの主張はあるが、その因果系へ入る独立した発動・接触条件はScoped Contentに示されない。",
+      "manifestation": "伝承内の発動条件は未確定。",
+      "content_refs": [
+        "CNT-001"
+      ]
+    },
+    {
+      "dimension_id": "D12",
+      "status": "D",
+      "primary": {
+        "code_id": "D12.OTD.DEVICE_INFRA",
+        "parent_id": "D12.OTD"
+      },
+      "secondary": [],
+      "rationale": "流言内部で直接の作用対象として井戸が明示される。",
+      "manifestation": "井戸という生活インフラ。",
+      "content_refs": [
+        "CNT-001"
+      ],
+      "evidence_refs": [
+        "EVD-005"
+      ]
+    },
+    {
+      "dimension_id": "D13",
+      "status": "D",
+      "primary": {
+        "code_id": "D13.PHY.ENV_OBJECT_MANIPULATION",
+        "parent_id": "D13.PHY"
+      },
+      "secondary": [],
+      "rationale": "流言内部では、加害主体とされた集団が井戸へ毒を投入し、環境・設備へ物理的に作用すると主張される。",
+      "manifestation": "井戸へ毒物を投入するという虚偽の環境・物体操作。",
+      "content_refs": [
+        "CNT-001"
+      ],
+      "evidence_refs": [
+        "EVD-005"
+      ]
+    },
+    {
+      "dimension_id": "D14",
+      "status": "D",
+      "primary": {
+        "code_id": "D14.NEG"
+      },
+      "secondary": [],
+      "rationale": "井戸への投毒という主張内容は明確に負の作用を表す。",
+      "manifestation": "負。",
+      "content_refs": [
+        "CNT-001"
+      ]
+    },
+    {
+      "dimension_id": "D15",
+      "status": "U",
+      "primary": null,
+      "secondary": [],
+      "rationale": "Scoped Contentは井戸投毒という加害行為自体を記録するが、流言内部で投毒後に生じる終端結果の領域を特定していない。",
+      "manifestation": "伝承内の終端帰結領域は未確定。",
+      "content_refs": [
+        "CNT-001"
+      ]
+    },
+    {
+      "dimension_id": "D16",
+      "status": "D",
+      "primary": {
+        "code_id": "D16.STA.STATIC_ASSOCIATION",
+        "parent_id": "D16.STA"
+      },
+      "secondary": [],
+      "rationale": "流言命題は、特定集団と井戸投毒という行為を結び付ける静的な対応・因果帰属として提示され、段階進行や遅延を命題内部で要求しない。",
+      "manifestation": "特定集団と井戸投毒を結び付ける静的対応。",
+      "content_refs": [
+        "CNT-001"
+      ],
+      "evidence_refs": [
+        "EVD-005"
+      ]
+    },
+    {
+      "dimension_id": "D17",
+      "status": "U",
+      "primary": null,
+      "secondary": [],
+      "rationale": "井戸投毒流言の命題内部に、主張された加害行為を回避・解除・制御する確立した方法は示されない。情報がないことから不可避性は推定しない。",
+      "manifestation": "伝承内の制御法は未確定。",
+      "content_refs": [
+        "CNT-001"
+      ]
+    },
+    {
+      "dimension_id": "D18",
+      "status": "D",
+      "primary": {
+        "code_id": "D18.L1"
+      },
+      "secondary": [],
+      "rationale": "「朝鮮人が井戸へ毒を投入した」という虚偽の因果命題は伝承内因果層L1に属する。反朝鮮人流言全般が現実の排斥・殺傷へ波及したことは確認できるが、井戸投毒流言単独の効果として切り分けられないため、狭めたVersion ScopeではL3を付与しない。",
+      "manifestation": "井戸投毒流言の内部因果（L1）のみをコード。",
+      "content_refs": [
+        "CNT-001"
+      ],
+      "evidence_refs": [
+        "EVD-005"
+      ]
+    },
+    {
+      "dimension_id": "D19",
+      "status": "U",
+      "primary": null,
+      "secondary": [],
+      "rationale": "Scoped Contentは井戸投毒流言の存在を確認できるが、この特定流言がどの地理範囲まで実流通したかを独立して確定できない。",
+      "manifestation": "井戸投毒流言単独の流通範囲は未確定。",
+      "content_refs": [
+        "CNT-001"
+      ]
+    },
+    {
+      "dimension_id": "D20",
+      "status": "D",
+      "primary": {
+        "code_id": "D20.NON.NO_HIDDEN_TRUTH",
+        "parent_id": "D20.NON"
+      },
+      "secondary": [],
+      "rationale": "井戸投毒流言は公開的な虚偽主張であり、命題成立に秘密の真相保持者を必要としない。",
+      "manifestation": "特権情報保持者なし。",
+      "content_refs": [
+        "CNT-001"
+      ],
+      "evidence_refs": [
+        "EVD-005"
+      ]
+    },
+    {
+      "dimension_id": "D21",
+      "status": "D",
+      "primary": {
+        "code_id": "D21.A4"
+      },
+      "secondary": [],
+      "rationale": "1923年関東大震災という具体的史実と、同時代資料に記録された井戸投毒流言の存在がEntry成立に不可欠である。",
+      "manifestation": "史実・記録の因果統合。",
+      "content_refs": [
+        "CNT-001",
+        "CNT-002",
+        "CNT-004"
+      ],
+      "evidence_refs": [
+        "EVD-001",
+        "EVD-005"
+      ]
+    }
+  ],
+  "analysis_notes": "主分析単位は、1923年関東大震災直後に流通した「朝鮮人が井戸へ毒を入れている」という根拠のない流言（VAR-001）に限定する。放火・武装蜂起等の関連流言（VAR-002）は同時期文脈としてContentに保持するがVersion Scopeから除外する。D09は計画的協調を仮定せずAGENCY_ATTRIBUTIONへ修正した。D18は井戸投毒流言の内部因果L1のみとし、反朝鮮人流言全般の社会的暴力は本Scopeで井戸投毒流言単独へ帰属できないためL3を付与しない。D19も同様に、この特定流言単独の流通範囲を確定できないためUとする。"
+}

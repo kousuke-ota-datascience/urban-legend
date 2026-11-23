@@ -1,0 +1,60 @@
+{
+  "artifact": "00",
+  "checks": {
+    "earliest_attestation": {
+      "notes": "2005-06-11の専用スレッドを現canonicalで確認できる成立直後の記録として扱い、絶対的な起源とは同一視していない。",
+      "status": "PASS"
+    },
+    "evidence_integrity": {
+      "notes": "SRC-001の成立直後ログには、原話→専用スレ→S家での追加聴取、組木の小箱、MとM父、村の世代管理、女性・子どもへの作用、死亡、隠岐由来説等が確認できるが、EVD-001〜003はその大半をEvidence unitとして固定していない。",
+      "status": "FINDING"
+    },
+    "primary_source_relation": {
+      "notes": "SRC-001を一次資料へ格上げせず、先行原投稿を受けた専用スレッドの保存ログという関係を保持している。",
+      "status": "PASS"
+    },
+    "source_assessment": {
+      "notes": "SRC-001は原投稿そのものではなく保存過去ログであり、mirror_reprint_or_restoration / direct_derivativeとして資料階層を明示している。",
+      "status": "PASS"
+    },
+    "source_evidence_support": {
+      "notes": "記録済みEVD-001〜003の本文自体はSRC-001の保存ログにより支持され、史実性や原投稿との距離も過大化していない。",
+      "status": "PASS"
+    },
+    "uncertainty_preservation": {
+      "notes": "原投稿そのものではないこと、歴史的由来・呪物実在が未確定であることを明示している。",
+      "status": "PASS"
+    }
+  },
+  "entry_id": "0181",
+  "findings": [
+    {
+      "category": "evidence_integrity",
+      "evidence_refs": [
+        "EVD-001",
+        "EVD-002",
+        "EVD-003"
+      ],
+      "finding_id": "F001",
+      "fix_direction": "SRC-001をレス範囲ごとに再切り出し、少なくとも①原投稿→専用スレ→S家追加聴取、②箱の名称・組木形態・サイズ/種別のうち初期形に属する情報、③M/M父の役割と対処、④女性・子どもへの作用条件と具体帰結、⑤武器としての作成目的・材料/呪法の物語内説明、⑥村の世代管理と行方不明箱、⑦隠岐等の地理由来、⑧物語内主張と後続検証・批判の区別を、精密locator付きEvidence unitとして固定する。その後10/20を全面再評価する。",
+      "impact": "Sourceを直接再読しなければ初期形の具体的物語、由来、人物役割、作用規則、管理状態、地理設定を00→10へ再構成できない。結果として10のContent Unitとcoverage_refsが過少化し、20では落ちた情報をContent層を飛ばして再導入する状態が生じている。",
+      "notes": "12観点の再点検で、既存F001は『10で既に使った情報の未固定』だけでなく、『10自体が抽出しなかったsalient initial-form informationの未固定』まで含むことを確認した。",
+      "rationale": "Workflow 10では00_sources.jsonのEvidenceのみを根拠に10_contents.jsonを再構成する必要がある。SRC-001の冒頭テンプレートと成立直後レスには、(1)『死ぬ程洒落にならない怖い話99』の原投稿から専用スレ、S家での追加聴取へ進む成立過程、(2)『ことりばこ』という組木の小箱、Mが神社の跡取り息子であることとM父への相談、(3)百数十年前に抑圧された村人が武器として作り何世代も極秘管理したという物語内由来、(4)最終兵器級の箱1個が行方不明という未解決状態、(5)女性・子どもへの選択的作用、死亡を含む帰結、(6)イッポウ〜ハッカイ等の箱種、(7)隠岐騒動・隠岐から来た人物という由来設定が記録されている。現EVD-001〜003は成立時点、一般的な呪物性・女性子どもへの重い害、後代の真偽論争へ圧縮され、初期形を識別する主要意味の多くを固定していない。",
+      "severity": "Major",
+      "source_refs": [
+        "SRC-001"
+      ],
+      "summary": "SRC-001に存在する初期形の主要具体情報がcanonical Evidence unitへ大幅に未抽出である。"
+    }
+  ],
+  "review_notes": "再レビューcycle 002補正。0180 Golden Referenceの意味保存密度を比較基準としてSRC-001→Evidenceの抽出を12観点で再点検し、F001の範囲を拡張した。対象commit/blobとReview Seqは変更していない。",
+  "review_seq": 2,
+  "schema_version": "1.0",
+  "target": {
+    "artifact_path": "workspace/articles/f8fe59b49c2e1e/docs/10_each_lore/0181_kotoribako/0181_00_sources.json",
+    "blob_sha": "12ae64e7fb24f92b28b7db181a8ef8abf9b97d03",
+    "commit_sha": "a690081b7d266b2659be79e3049e7a5cdea10718",
+    "reviewed_at": "2026-09-20T03:26:09Z"
+  },
+  "verdict": "Major"
+}

@@ -1,0 +1,469 @@
+{
+  "schema_version": "1.0",
+  "entry_id": "0179",
+  "macro_category": "ネット怪談",
+  "entry_type": "物語・伝説",
+  "version_scope": {
+    "description": "現在直接内容を確認できる最も早い安定した共有核として、2001年後代再録の『分からないほうがいい』型をprimary Scopeとする。遠方の白い人物のくねくねした異常動作、兄が対象を見た後に何であるか分かったように語ること、後に兄が知的障害になったと伝えられることを含む。2000年3月5日の先行記録は後代解説が指示する原ページ未固定の候補であり、確定起源としては用いない。2003年の意図的混成・増補型は、発動条件、終端、回避規則等を追加変更するlater variantとしてScope外に置く。",
+    "included_variants": [
+      "VAR-001"
+    ],
+    "excluded_variants": [
+      "VAR-002"
+    ],
+    "content_refs": [
+      "CNT-001",
+      "CNT-002",
+      "CNT-003"
+    ],
+    "notes": "2001年原ページは未固定で、2000年候補も後代解説のみで原ページ未固定。2003年型は投稿者自身が先行怪談との混成を明示し、双眼鏡、祖父の警告、兄の模倣的終端、家族処置、語り手の終端視認を追加するため、primary Scopeへ遡及させない。"
+  },
+  "dimensions": [
+    {
+      "dimension_id": "D01",
+      "status": "U",
+      "primary": null,
+      "secondary": [],
+      "rationale": "2001年7月7日は後代再録で確認できる最古級定点であり、生成年を直接示さない。",
+      "manifestation": "少なくとも2001年には原型が投稿されたと後代再録から確認できるが、それ以前の形成は不明である。",
+      "content_refs": [
+        "CNT-001",
+        "CNT-002"
+      ],
+      "evidence_refs": [
+        "EVD-001",
+        "EVD-002"
+      ],
+      "taxonomy_gap": {
+        "present": false
+      }
+    },
+    {
+      "dimension_id": "D02",
+      "status": "I",
+      "primary": {
+        "code_id": "D02.WEB.FORUM",
+        "parent_id": "D02.WEB"
+      },
+      "secondary": [],
+      "rationale": "2001年レス212は後代Web再録から確認するため、媒体写像は可能だがDirectとはしない。",
+      "manifestation": "初期確認形は匿名Web掲示板の怪談投稿である。",
+      "content_refs": [
+        "CNT-001",
+        "CNT-002"
+      ],
+      "evidence_refs": [
+        "EVD-001",
+        "EVD-002"
+      ],
+      "taxonomy_gap": {
+        "present": false
+      }
+    },
+    {
+      "dimension_id": "D03",
+      "status": "I",
+      "primary": {
+        "code_id": "D03.WEB.FORUM",
+        "parent_id": "D03.WEB"
+      },
+      "secondary": [],
+      "rationale": "primary Scopeの2001年型は後代再録で確認する匿名掲示板投稿である。再録記事は現在のEvidence取得経路であり、このScope内で受容者へ流通した別媒体としては数えない。",
+      "manifestation": "primary Scopeでは匿名Web掲示板投稿として流通する。",
+      "content_refs": [
+        "CNT-001",
+        "CNT-002"
+      ],
+      "evidence_refs": [
+        "EVD-001",
+        "EVD-002"
+      ],
+      "taxonomy_gap": {
+        "present": false
+      }
+    },
+    {
+      "dimension_id": "D04",
+      "status": "U",
+      "primary": null,
+      "secondary": [],
+      "rationale": "primary Scopeの2001年型だけでは、時間を通じた変容パターンを確定できない。2003年の混成・増補型はContent上のlater variantとして保持するが、Scope外の構造をD04の値として取り込まない。",
+      "manifestation": "primary Scope内で確認できるのは一つの後代再録形であり、変容型は未確定である。",
+      "content_refs": [
+        "CNT-001",
+        "CNT-002"
+      ],
+      "evidence_refs": [
+        "EVD-001",
+        "EVD-002"
+      ],
+      "taxonomy_gap": {
+        "present": false
+      }
+    },
+    {
+      "dimension_id": "D05",
+      "status": "I",
+      "primary": {
+        "code_id": "D05.HRS.FOAF",
+        "parent_id": "D05.HRS"
+      },
+      "secondary": [],
+      "rationale": "primary Scopeの2001年型は、語り手が弟から聞いた話として、弟の友人A君の体験をさらに伝える形式で提示される。後代再録経由のためI。",
+      "manifestation": "直接の体験者ではない語り手から、近接した人物連鎖を通じて伝えられるFOAF形式である。",
+      "content_refs": [
+        "CNT-001",
+        "CNT-002"
+      ],
+      "evidence_refs": [
+        "EVD-001",
+        "EVD-002"
+      ],
+      "taxonomy_gap": {
+        "present": false
+      }
+    },
+    {
+      "dimension_id": "D06",
+      "status": "I",
+      "primary": {
+        "code_id": "D06.T2"
+      },
+      "secondary": [],
+      "rationale": "primary Scopeの2001年型は、語り手が弟から聞いた『本当の話』であり、弟は友人A君の実体験だとする。したがって、Scopeが要求する本当らしさは近接伝聞である。後代再録経由のためI。",
+      "manifestation": "A君の実体験という主張を、弟を介する近接伝聞として提示する。",
+      "content_refs": [
+        "CNT-001",
+        "CNT-002"
+      ],
+      "evidence_refs": [
+        "EVD-001",
+        "EVD-002"
+      ],
+      "taxonomy_gap": {
+        "present": false
+      }
+    },
+    {
+      "dimension_id": "D07",
+      "status": "I",
+      "primary": {
+        "code_id": "D07.ANO.UNKNOWN_EXISTENCE",
+        "parent_id": "D07.ANO"
+      },
+      "secondary": [
+        {
+          "code_id": "D07.ANO.ANOMALOUS_PERCEPTION",
+          "parent_id": "D07.ANO"
+        }
+      ],
+      "rationale": "遠方の白い存在が何者か分からず、不自然な動き自体も異常知覚として語られる。",
+      "manifestation": "見えているのに正体を確定できない対象が怪異の中心になる。",
+      "content_refs": [
+        "CNT-001",
+        "CNT-003"
+      ],
+      "evidence_refs": [
+        "EVD-001",
+        "EVD-002"
+      ],
+      "taxonomy_gap": {
+        "present": false
+      }
+    },
+    {
+      "dimension_id": "D08",
+      "status": "I",
+      "primary": {
+        "code_id": "D08.DEX.DIRECT_EVENT",
+        "parent_id": "D08.DEX"
+      },
+      "secondary": [
+        {
+          "code_id": "D08.DEX.PERCEPTUAL_ANOMALY",
+          "parent_id": "D08.DEX"
+        }
+      ],
+      "rationale": "人物が白い存在を直接視認することが問題化の入口だが、Contentは保存記録・後代再録から確認するためI。",
+      "manifestation": "遠方の異常な対象を目撃するところから謎が始まる。",
+      "content_refs": [
+        "CNT-001"
+      ],
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "taxonomy_gap": {
+        "present": false
+      }
+    },
+    {
+      "dimension_id": "D09",
+      "status": "I",
+      "primary": {
+        "code_id": "D09.UNK.FORBIDDEN_INQUIRY",
+        "parent_id": "D09.UNK"
+      },
+      "secondary": [
+        {
+          "code_id": "D09.UNK.DELIBERATE_NONRESOLUTION",
+          "parent_id": "D09.UNK"
+        }
+      ],
+      "rationale": "兄は何であるか分かったように見えた後、『分からないほうがいい』と答える。正体を開示せず、知ることを避けるべきものとして残す操作がprimary Scopeで確認できる。",
+      "manifestation": "対象を説明して解消せず、『分からないほうがよい』とすることで、知識化を禁じられた謎として保持する。",
+      "content_refs": [
+        "CNT-002",
+        "CNT-003"
+      ],
+      "evidence_refs": [
+        "EVD-002"
+      ],
+      "taxonomy_gap": {
+        "present": false
+      }
+    },
+    {
+      "dimension_id": "D10",
+      "status": "U",
+      "primary": null,
+      "secondary": [],
+      "rationale": "白い存在の正体は確定されず、妖怪・霊等へ固定できない。",
+      "manifestation": "作用主体は『正体不明の白い何か』のまま残る。",
+      "content_refs": [
+        "CNT-003"
+      ],
+      "evidence_refs": [
+        "EVD-001",
+        "EVD-002"
+      ],
+      "taxonomy_gap": {
+        "present": false
+      }
+    },
+    {
+      "dimension_id": "D11",
+      "status": "I",
+      "primary": {
+        "code_id": "D11.INF.UNDERSTAND_RECOGNIZE",
+        "parent_id": "D11.INF"
+      },
+      "secondary": [
+        {
+          "code_id": "D11.SEN.VISUAL_EXPOSURE",
+          "parent_id": "D11.SEN"
+        }
+      ],
+      "rationale": "兄は対象を見た後に何であるか分かったようにされ、後に知的障害になったと伝えられる。理解と視認は物語内で危害に先行するが、詳細視認の程度、理解内容、因果は未確定なのでIに留める。",
+      "manifestation": "視認に続く理解らしき認知状態が、兄の後の異変に先行する条件として置かれる。",
+      "content_refs": [
+        "CNT-002"
+      ],
+      "evidence_refs": [
+        "EVD-002"
+      ],
+      "taxonomy_gap": {
+        "present": false
+      }
+    },
+    {
+      "dimension_id": "D12",
+      "status": "I",
+      "primary": {
+        "code_id": "D12.OTH.SPECIFIC_OTHER",
+        "parent_id": "D12.OTH"
+      },
+      "secondary": [],
+      "rationale": "primary Scopeで明示的な異変を受けるのは兄だけである。",
+      "manifestation": "対象を見て理解したように語る兄が、後に伝えられる知的障害の直接の受け手となる。",
+      "content_refs": [
+        "CNT-002",
+        "CNT-001"
+      ],
+      "evidence_refs": [
+        "EVD-002",
+        "EVD-001"
+      ],
+      "taxonomy_gap": {
+        "present": false
+      }
+    },
+    {
+      "dimension_id": "D13",
+      "status": "I",
+      "primary": {
+        "code_id": "D13.COG.COGNITION_TRIGGERED_HARM",
+        "parent_id": "D13.COG"
+      },
+      "secondary": [],
+      "rationale": "対象を見て何であるか分かったようにされる兄が、後に知的障害になったと伝えられる。Scope内では、認知状態に後続する危害として語られるが、直接の精神操作機構までは明示されない。",
+      "manifestation": "理解らしき認知状態の後に、兄の認知的な重大異変が伝えられる。",
+      "content_refs": [
+        "CNT-002"
+      ],
+      "evidence_refs": [
+        "EVD-002"
+      ],
+      "taxonomy_gap": {
+        "present": false
+      }
+    },
+    {
+      "dimension_id": "D14",
+      "status": "I",
+      "primary": {
+        "code_id": "D14.NEG"
+      },
+      "secondary": [],
+      "rationale": "兄が後に知的障害になったと伝えられるため、primary Scopeの帰結は負である。後代型のidentity喪失や家族処置は用いない。",
+      "manifestation": "兄の認知的な重大異変が負の帰結として伝えられる。",
+      "content_refs": [
+        "CNT-002"
+      ],
+      "evidence_refs": [
+        "EVD-002"
+      ],
+      "taxonomy_gap": {
+        "present": false
+      }
+    },
+    {
+      "dimension_id": "D15",
+      "status": "I",
+      "primary": {
+        "code_id": "D15.MND.MEMORY_COGNITION",
+        "parent_id": "D15.MND"
+      },
+      "secondary": [],
+      "rationale": "primary Scopeでの明示的帰結は、兄が後に知的障害になったと伝えられることである。自己同一性の崩壊や怪異の模倣的運動は2003年型のみの要素であり、含めない。",
+      "manifestation": "兄の認知領域の障害が後の状態として伝えられる。",
+      "content_refs": [
+        "CNT-002"
+      ],
+      "evidence_refs": [
+        "EVD-002"
+      ],
+      "taxonomy_gap": {
+        "present": false
+      }
+    },
+    {
+      "dimension_id": "D16",
+      "status": "I",
+      "primary": {
+        "code_id": "D16.EVT.SEQUENTIAL_EPISODE",
+        "parent_id": "D16.EVT"
+      },
+      "secondary": [],
+      "rationale": "白い人物の発見と異常な動作、兄の理解らしき発話、後に伝えられる知的障害という順に叙述される。後代型の追加場面を含めずとも、段階的な一件の因果列として提示されるためI。",
+      "manifestation": "目撃から認知上の転換を経て、兄の後の異変へ至る一件の段階系列である。",
+      "content_refs": [
+        "CNT-001",
+        "CNT-002"
+      ],
+      "evidence_refs": [
+        "EVD-001",
+        "EVD-002"
+      ],
+      "taxonomy_gap": {
+        "present": false
+      }
+    },
+    {
+      "dimension_id": "D17",
+      "status": "U",
+      "primary": null,
+      "secondary": [],
+      "rationale": "兄の『分からないほうがいい』は正体の開示を拒むが、primary Scopeでは再現可能な回避・制御手順として明示されない。2003年型の祖父による『見てはならない』警告はScope外であるため、もっともらしい対処法を補わずUとする。",
+      "manifestation": "危険を示唆する発話はあるが、primary Scope内で確定できる回避・制御規則はない。",
+      "content_refs": [
+        "CNT-002"
+      ],
+      "evidence_refs": [
+        "EVD-002"
+      ],
+      "taxonomy_gap": {
+        "present": false
+      }
+    },
+    {
+      "dimension_id": "D18",
+      "status": "I",
+      "primary": {
+        "code_id": "D18.L1"
+      },
+      "secondary": [],
+      "rationale": "primary Scopeで語られる異変は物語内の兄に限られる。読者が記事を理解しただけで作用する構造や独立した社会現実効果は確認しない。",
+      "manifestation": "作用は白い存在を見た物語内人物に限定される。",
+      "content_refs": [
+        "CNT-002"
+      ],
+      "evidence_refs": [
+        "EVD-002"
+      ],
+      "taxonomy_gap": {
+        "present": false
+      },
+      "notes": "L1=1 / L2=0 / L3=0。"
+    },
+    {
+      "dimension_id": "D19",
+      "status": "I",
+      "primary": {
+        "code_id": "D19.NET.OPEN_FORUM_WEB",
+        "parent_id": "D19.NET"
+      },
+      "secondary": [],
+      "rationale": "primary Scopeは2001年の匿名掲示板レスとして確認されるため、公開Web流通としてI。",
+      "manifestation": "匿名掲示板を介して不特定受容者へ流通する。",
+      "content_refs": [
+        "CNT-001",
+        "CNT-002"
+      ],
+      "evidence_refs": [
+        "EVD-001",
+        "EVD-002"
+      ],
+      "taxonomy_gap": {
+        "present": false
+      }
+    },
+    {
+      "dimension_id": "D20",
+      "status": "U",
+      "primary": null,
+      "secondary": [],
+      "rationale": "primary Scopeには、真相・追加情報・回避情報を偏って保持する人物または集団が示されない。2003年型の祖父の警告はScope外であり、家族・血縁全体の排他的保持へ拡張する根拠にもならない。",
+      "manifestation": "正体は開示されず、特権的な情報保持者はprimary Scope内で確定しない。",
+      "content_refs": [
+        "CNT-002",
+        "CNT-003"
+      ],
+      "evidence_refs": [
+        "EVD-002"
+      ],
+      "taxonomy_gap": {
+        "present": false
+      }
+    },
+    {
+      "dimension_id": "D21",
+      "status": "D",
+      "primary": {
+        "code_id": "D21.A0"
+      },
+      "secondary": [],
+      "rationale": "primary Scopeは『母の田舎』とするだけで、実在の地域名・地点・制度・事件に接続しない。後代型の秋田はScope外である。",
+      "manifestation": "怪異の場は匿名の田舎としてのみ語られ、特定可能な現実アンカーを持たない。",
+      "content_refs": [
+        "CNT-001"
+      ],
+      "evidence_refs": [
+        "EVD-001"
+      ],
+      "taxonomy_gap": {
+        "present": false
+      }
+    }
+  ],
+  "analysis_notes": "primary Version Scopeを、現在直接内容を確認できる最も早い安定した共有核である2001年『分からないほうがいい』型へ限定した。2000年3月5日候補は後代解説のみが示す原ページ未固定の記録であり、確定起源としてコードしない。2003年の意図的混成・増補型はlater variantとしてScope外に置いた。その結果、2003年専用の一人称回想、双眼鏡による詳細視認、祖父の回避警告、兄の同一性喪失的終端、家族処置、語り手の終端視認、秋田をD05/D06/D09/D11-D17/D20/D21のprimary値へ遡及させない。D20は情報保持者の支持不足のためUとする。"
+}

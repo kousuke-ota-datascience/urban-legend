@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.0",
+  "entry_id": "0356",
+  "lore_name": "カーネル・サンダースの呪い",
+  "summary": {
+    "narrative": "1985年の阪神優勝時、ファンは道頓堀店のカーネル・サンダース像をランディ・バースに見立てて胴上げし、道頓堀川へ投げ込んだ。像が長く行方不明だったことと、阪神タイガースが優勝できないことを結び付け、『カーネル・サンダースの呪い』と説明する俗説が語られた。この言説は2009年の阪神球団公式Web史料でも公に紹介されている。像は同年に発見・修復され、『おかえり！カーネル』と命名されて『幸運の象徴』として展示された。",
+    "structure": {
+      "primary_actors": {
+        "status": "known",
+        "value": [
+          "阪神タイガースのファン",
+          "カーネル・サンダース像",
+          "阪神タイガース"
+        ]
+      },
+      "affected_targets": {
+        "status": "known",
+        "value": "阪神タイガースの競技成績"
+      },
+      "entry_trigger": {
+        "status": "known",
+        "value": "1985年に像をランディ・バースに見立てて胴上げし、道頓堀川へ投げ込んだこと"
+      },
+      "causal_agent": {
+        "status": "known",
+        "value": "俗説上は像への仕打ちに伴う非人格的な呪い"
+      },
+      "mechanism": {
+        "status": "known",
+        "value": "像への仕打ちに伴う呪いが、阪神の優勝を妨げる不運として作用すると語られる"
+      },
+      "state_transition": {
+        "status": "known",
+        "value": "祝勝時にランディ・バースに見立てられた像→長期行方不明・呪いの象徴→2009年回収・修復→『おかえり！カーネル』・幸運の象徴として展示"
+      },
+      "temporal_structure": {
+        "status": "known",
+        "value": "1985年の事件を起点に長期間語られ、2009年の発見が節目となる"
+      },
+      "rules_and_taboos": {
+        "status": "unknown",
+        "value": null
+      },
+      "avoidance_control": {
+        "status": "unknown",
+        "value": null
+      },
+      "terminal_state": {
+        "status": "known",
+        "value": "像は2009年に回収・修復され、『おかえり！カーネル』として展示された後、2024年に老朽化のため人形納めされた"
+      },
+      "uncertainties": {
+        "status": "known",
+        "value": [
+          "『呪い』という呼称の最初の成立時期",
+          "成績との因果関係"
+        ]
+      },
+      "variant_boundaries": {
+        "status": "known",
+        "value": "1985年投げ込みと阪神が優勝できないことを呪いで結ぶ共有核を対象"
+      }
+    },
+    "coverage_refs": [
+      "CNT-001",
+      "CNT-002",
+      "CNT-003",
+      "CNT-004"
+    ]
+  },
+  "content_units": [
+    {
+      "content_id": "CNT-001",
+      "type": "event",
+      "text": "1985年の阪神優勝時、ファンが道頓堀店のカーネル・サンダース像をランディ・バースに見立てて胴上げし、道頓堀川へ投げ込んだ。",
+      "evidence_refs": [
+        "EVD-001",
+        "EVD-005"
+      ]
+    },
+    {
+      "content_id": "CNT-002",
+      "type": "claim",
+      "text": "像を川へ投げ込み長く行方不明になったことと、阪神タイガースが優勝できないことを結び付ける『カーネル・サンダースの呪い』が語られた。",
+      "evidence_refs": [
+        "EVD-002"
+      ],
+      "notes": "スポーツ俗説上の因果であり、成績の実証的原因ではない。"
+    },
+    {
+      "content_id": "CNT-003",
+      "type": "event",
+      "text": "像は2009年に道頓堀川から発見・修復され、『おかえり！カーネル』と命名されて『幸運の象徴』として展示され、2024年には老朽化により住吉大社で人形納めされた。",
+      "evidence_refs": [
+        "EVD-003",
+        "EVD-004"
+      ]
+    },
+    {
+      "content_id": "CNT-004",
+      "type": "other",
+      "text": "2009年の阪神球団公式Web史料でも、行方不明のカーネル像のせいでタイガースが優勝できないという『カーネル・サンダースの呪い』が公に紹介された。",
+      "evidence_refs": [
+        "EVD-002"
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "variant_id": "VAR-001",
+      "kind": "initial",
+      "description": "1985年の像投げ込みと阪神が優勝できないことを『呪い』として結び付ける主要形。",
+      "attestation": "球団公式史とKFC公式の像履歴で、核となる現実イベント、呪い言説、回収後の像履歴を確認。",
+      "content_refs": [
+        "CNT-001",
+        "CNT-002",
+        "CNT-003",
+        "CNT-004"
+      ],
+      "evidence_refs": [
+        "EVD-001",
+        "EVD-002",
+        "EVD-003",
+        "EVD-004",
+        "EVD-005"
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "text": "呪いと競技成績の因果関係は実証されたものではない。",
+      "evidence_refs": [
+        "EVD-002"
+      ],
+      "content_refs": [
+        "CNT-002"
+      ]
+    },
+    {
+      "text": "『呪い』という語が最初に成立した媒体・日時は今回の範囲では固定していない。",
+      "content_refs": [
+        "CNT-001",
+        "CNT-002",
+        "CNT-003",
+        "CNT-004"
+      ]
+    }
+  ]
+}

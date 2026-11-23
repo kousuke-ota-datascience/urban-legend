@@ -1,0 +1,216 @@
+{
+  "artifact": "20",
+  "checks": {
+    "analysis_invariance": {
+      "notes": "SRC-001再点検で現10に未抽出のsalient情報が多数確認された。これをContentへ戻すとD04/D16/D17/D20/D21等が再判定対象となるため、現20を上流修正後も不変とはみなせない。",
+      "status": "FINDING"
+    },
+    "causality": {
+      "notes": "D09→D10→D11→D12→D13→D15→D17の中心因果モデル自体は、呪物・接触・特定対象への害・隔離というContentの核と概ね整合する。",
+      "status": "PASS"
+    },
+    "d12_d13_d15_causal_chain": {
+      "notes": "D12=女性・子ども、D13=呪いによる災厄まではEVD-002に直接対応するが、D15=DEATH/DはEVD-002本文では死亡を固定しておらずEvidence ceilingを超える。",
+      "status": "FINDING"
+    },
+    "d18_scope_independent_x_evidence": {
+      "notes": "D18はL1のみで、受容者感染や社会現実効果を追加推定していない。",
+      "status": "PASS"
+    },
+    "d19_publicability_vs_national_distribution": {
+      "notes": "D19はOPEN_FORUM_WEBに留まり、公開可能性からNATIONAL_PUBLIC等の人口普及を推定していない。",
+      "status": "PASS"
+    },
+    "d20_missing_info_vs_no_one_knows": {
+      "notes": "NO_ONE_KNOWSへの短絡はしていない。ただしLOCAL_RESIDENTを選ぶためのContent根拠不足はsemantic_traceability Findingとして扱う。",
+      "status": "PASS"
+    },
+    "d21_reality_anchor": {
+      "notes": "D21=A2の根拠とする『島根県方面』はScoped Contentに含まれない。Sourceに存在する地理情報を20で直接再導入してはならない。",
+      "status": "FINDING"
+    },
+    "dimension_semantics": {
+      "notes": "D06は後続スレッドの真偽論争を伝承自身の真実性提示へ変換しており、D20/D21はContentにない具体情報をコードへ持ち込んでいる。",
+      "status": "FINDING"
+    },
+    "entry_classification": {
+      "notes": "macro_category=ネット怪談、entry_type=呪物怪談はScoped Contentの中心構造と整合する。",
+      "status": "PASS"
+    },
+    "evidence_confidence_ceiling": {
+      "notes": "D06=T6/DとD15=DEATH/Dは参照canonical Evidenceの記述より強く、さらに上流00→10のEvidence固定不足があるため現状の確度を維持できない。",
+      "status": "FINDING"
+    },
+    "semantic_traceability": {
+      "notes": "D20の地元・家系内部者、D21の島根方面に加え、現20は初期形の具体情報を10 Contentに保持しないままSource由来知識へ依存している。Source再点検ではM/M父や隠岐等の材料自体は確認できるため、問題は情報の不存在ではなく10層の迂回である。",
+      "status": "FINDING"
+    },
+    "status_reasoning": {
+      "notes": "D06をEVD-003の外部的な真偽論争だけでDirectとするのはcoding ruleのD06定義に合わない。D15=DEATH/Dもcanonical EVD-002本文の『重い害』より強い。",
+      "status": "FINDING"
+    },
+    "taxonomy_gap": {
+      "notes": "今回の問題はtaxonomy不足ではなく、Evidence/Contentから既存Childへ到達する推論とStatusの強さにある。",
+      "status": "PASS"
+    },
+    "version_scope": {
+      "notes": "『2005年の掲示板主要形』という方針自体は妥当だが、現VAR-001/Content refsは原投稿→専用スレ→S家追加聴取→由来開示という2005年内部の主要展開を十分表現しておらず、Scope内容を監査可能に固定できていない。",
+      "status": "FINDING"
+    }
+  },
+  "entry_id": "0181",
+  "findings": [
+    {
+      "category": "dimension_semantics",
+      "content_refs": [
+        "CNT-001",
+        "CNT-002",
+        "CNT-003",
+        "CNT-004"
+      ],
+      "dimension_refs": [
+        "D05",
+        "D06"
+      ],
+      "evidence_refs": [
+        "EVD-003"
+      ],
+      "finding_id": "F001",
+      "fix_direction": "原話の提示スタンスを固定するEvidenceを00へ追加してD06を再判定する。現canonical Evidenceだけで一意に決められない場合はUへ保守化し、T6を後続批判の存在から導かない。",
+      "impact": "D05の経験談形式との関係を含む真実性提示次元が誤って確定され、Status=Dも過大になる。",
+      "rationale": "coding rulesのD06は『研究者の真偽判定ではなく、伝承が要求する認識論的スタンス』をコードする。現D06の根拠EVD-003は後続スレッドで創作説等が競合するという外部的受容事実であり、それだけでは原話が受容者へT6=真偽未確定を要求していたことをDirectに示さない。",
+      "severity": "Moderate",
+      "summary": "D06=T6/Dが伝承自身の真実性提示ではなく後続読者の真偽論争に依存している。"
+    },
+    {
+      "category": "semantic_traceability",
+      "content_refs": [
+        "CNT-001",
+        "CNT-004"
+      ],
+      "dimension_refs": [
+        "D20"
+      ],
+      "finding_id": "F002",
+      "fix_direction": "00でM/M父の役割をEvidence化し、10で特権情報保持構造をsalient Contentとして固定してからD20を再判定する。現10を維持する場合はLOCAL_RESIDENTを維持できない。",
+      "impact": "特権情報保持者の類型が上流Contentより具体化され、独立コーダーが同じ入力からD20を再現できない。",
+      "rationale": "10が保持するのは『危険を知る人物』『事情を知る者』までであり、その人物が地元・宗教的家系内部者であることはContentとして固定されていない。一方SRC-001成立直後ログには、Mが神社の跡取り息子でありM父へ相談することが確認できる。このためD20の方向性自体にはSource上の材料があるが、20は10 Contentを根拠に判断する契約を飛ばしている。",
+      "severity": "Moderate",
+      "summary": "D20=LOCAL_RESIDENTはScoped Contentにない『地元・家系』属性を追加している。"
+    },
+    {
+      "category": "semantic_traceability",
+      "content_refs": [
+        "CNT-001",
+        "CNT-002",
+        "CNT-003",
+        "CNT-004"
+      ],
+      "dimension_refs": [
+        "D21"
+      ],
+      "finding_id": "F003",
+      "fix_direction": "隠岐等の地理設定をVersion Scopeに含めるかを00/10で裁定し、含める場合はEvidence→Contentへ追跡可能に固定してからD21を再判定する。後続検討説なら初期形へ遡及せずScope外/variantとして分離する。",
+      "impact": "現実アンカーがContent境界を越えて強化され、Version Scopeとsemantic traceabilityが崩れる。",
+      "rationale": "D21のrationaleは島根県方面という具体地域設定を前提にするが、10_contents.jsonには地理情報がない。一方SRC-001成立直後ログには隠岐騒動、隠岐から来た人物が製法を伝えたという由来説が確認できる。したがって地理材料そのものが完全に不存在なのではなく、00 Evidence→10 Contentへ固定せず20へ直接持ち込んだsemantic traceability違反である。",
+      "severity": "Moderate",
+      "summary": "D21=A2はScoped Contentにない『島根県方面』を現実アンカーとして導入している。"
+    },
+    {
+      "category": "status_reasoning",
+      "content_refs": [
+        "CNT-003"
+      ],
+      "dimension_refs": [
+        "D12",
+        "D13",
+        "D15"
+      ],
+      "evidence_refs": [
+        "EVD-002"
+      ],
+      "finding_id": "F004",
+      "fix_direction": "00で死亡に関する該当Evidenceを明示的に固定しCNT-003を支えるか、現Evidenceの範囲に合わせてD15のcode/statusを再評価する。",
+      "impact": "D12→D13→D15の終端領域とDirectnessがEvidence ceilingを超え、分析の確度表示が過大になる。",
+      "rationale": "D15はCNT-003の『病や死に至らせうる』を根拠とするが、そのCNTが参照するEVD-002本文は女性・子どもへの『重い害』までしか固定していない。Source本文には死亡に関する描写が存在しても、現canonical Evidence層を経由しない限りD15をDirectとして確定できない。",
+      "severity": "Moderate",
+      "summary": "D15=DEATH/Dは参照canonical Evidenceの確度を超える。"
+    },
+    {
+      "category": "version_scope",
+      "content_refs": [
+        "CNT-001",
+        "CNT-002",
+        "CNT-003",
+        "CNT-004"
+      ],
+      "dimension_refs": [
+        "D04",
+        "D16",
+        "D17",
+        "D20",
+        "D21"
+      ],
+      "evidence_refs": [
+        "EVD-001",
+        "EVD-002",
+        "EVD-003"
+      ],
+      "finding_id": "F005",
+      "fix_direction": "00/10修正後にVersion Scopeを再確定し、初期原投稿・追加聴取・同時期検討・後続検証の境界を明示したうえでD01〜D21を再レビューする。",
+      "impact": "D01〜D21が実際にどの2005年情報を母集団としているか不明瞭で、上流修正後に分析結果が変わる可能性を排除できない。",
+      "rationale": "SRC-001再点検では、原投稿、専用スレ、S家追加聴取、M/M父、村の世代管理、行方不明箱、隠岐由来等、2005年成立直後の意味構造が確認できる。現version_scopeはVAR-001とCNT-001〜004だけを参照しており、これらを包含するか除外するかの判断痕跡がない。",
+      "severity": "Moderate",
+      "summary": "現20のVersion Scopeは、2005年初期形を名目上対象とする一方、そのsalient contentを4 Content Unitで過少表現している。"
+    }
+  ],
+  "review_notes": "再レビューcycle 002補正。0180 Golden Reference水準で指定12観点をSRC-001まで戻って再点検し、上流10のsalient Content過少抽出が20のVersion Scope/traceabilityへ波及していることを追記した。対象commit/blobとReview Seqは変更していない。",
+  "review_seq": 2,
+  "schema_version": "1.0",
+  "sensemaking_reconstruction": {
+    "content_refs": [
+      "CNT-001",
+      "CNT-002",
+      "CNT-003",
+      "CNT-004"
+    ],
+    "dimension_refs": [
+      "D01",
+      "D02",
+      "D03",
+      "D04",
+      "D05",
+      "D06",
+      "D07",
+      "D08",
+      "D09",
+      "D10",
+      "D11",
+      "D12",
+      "D13",
+      "D14",
+      "D15",
+      "D16",
+      "D17",
+      "D18",
+      "D19",
+      "D20",
+      "D21"
+    ],
+    "evidence_refs": [
+      "EVD-001",
+      "EVD-002",
+      "EVD-003"
+    ],
+    "model": "現10からは『未知の木箱を持ち込み、女性・子どもへ重い害を及ぼす呪物と理解され、事情を知る人物が対処する』という因果核しか再構成できない。しかしSRC-001成立直後ログには、原投稿→専用スレ→S家追加聴取、Mが神社跡取りであること、M父への相談、村の世代管理、行方不明箱、箱種、隠岐由来等のsalient informationが残る。したがって現20は上流で過少抽出されたContentを分析母集団としており、D20/D21ではその一部をContent層を飛ばして再導入している。",
+    "notes": "中心因果核だけなら現コードの一部は維持可能だが、上流の意味保存修復後にD04/D16/D17/D20/D21を含む全次元を再評価する必要がある。",
+    "status": "FINDING"
+  },
+  "target": {
+    "artifact_path": "workspace/articles/f8fe59b49c2e1e/docs/10_each_lore/0181_kotoribako/0181_20_analysis.json",
+    "blob_sha": "e0956c5e97ea86ad349a2a1934eef176bd25c76f",
+    "commit_sha": "1e68fcca6ee83bd6016cf7f1ed0c2bfb88fc9674",
+    "reviewed_at": "2026-09-20T03:26:09Z"
+  },
+  "verdict": "Moderate"
+}
