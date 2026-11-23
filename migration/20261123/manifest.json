@@ -1,0 +1,800 @@
+{
+  "schema_version": 1,
+  "migration_id": "repo-move-20261123",
+  "phase": "prepared",
+  "source_repository": "kousuke-ota-datascience/0015_zenn",
+  "source_subdirectory": "workspace/articles/f8fe59b49c2e1e",
+  "source_head_sha": "39bb00b9f3af87abe72d5b0904c9021d1e4d0791",
+  "source_tree_sha": "497b385c7bd9ae094fdd5559a1197b99bb0c4487",
+  "target_repository": "kousuke-ota-datascience/urban-legend",
+  "target_baseline_commit": "7106d70967d14205e7a66c289e6ee26db8ea8ce3",
+  "legacy_review_tree_sha": "ac67031892f83df65652428c3720a839104204f6",
+  "legacy_review_files_expected": 351,
+  "shadow_controlplane_data_source_id": null,
+  "entry_count": 27,
+  "entries": {
+    "0001": {
+      "legacy_status": {
+        "10": "完了",
+        "20": "完了",
+        "00": "完了"
+      },
+      "legacy_review_seq": 7,
+      "legacy_checkpoint": {
+        "10": "6dbb87cf3c4a86e86ea93c3474b9509f7ea1bd72",
+        "20": "4f9686f89880616a30fd9007c66bff3aca23909b",
+        "00": "cffabed12502ce2d2efcc893a503c2426d0447ab"
+      },
+      "baseline_canonical": {
+        "10": {
+          "path": "docs/10_each_lore/0001_kuchisake_onna/0001_10_contents.json",
+          "blob_sha": "08f73718b7ba76d8885294abe5456fb1a8a7510f"
+        },
+        "20": {
+          "path": "docs/10_each_lore/0001_kuchisake_onna/0001_20_analysis.json",
+          "blob_sha": "3a64c3bb211607662e2c3dc0375460e95b6dd73a"
+        },
+        "00": {
+          "path": "docs/10_each_lore/0001_kuchisake_onna/0001_00_sources.json",
+          "blob_sha": "17b374004264cb4dbf3c5c3e279d9fa4314d4187"
+        }
+      },
+      "legacy_review_dir_tree_sha": "c7dd28ce9fe52d8002832656994bf9d69133c344",
+      "migration_kind": "fresh_review"
+    },
+    "0003": {
+      "legacy_status": {
+        "10": "完了",
+        "20": "完了",
+        "00": "完了"
+      },
+      "legacy_review_seq": 3,
+      "legacy_checkpoint": {
+        "10": "2fb3b1dee3e60d5a8f5a8460d2047038f648f1d1",
+        "20": "0da450e372e6f16c0b02d8562d4de03dd7323c00",
+        "00": "0f604c5a8568814a9b85083aa0b09d4855ad583f"
+      },
+      "baseline_canonical": {
+        "10": {
+          "path": "docs/10_each_lore/0003_akai_kami_aoi_kami/0003_10_contents.json",
+          "blob_sha": "cf3f92cf81c1b29aa63bd75860f321de57ed8328"
+        },
+        "20": {
+          "path": "docs/10_each_lore/0003_akai_kami_aoi_kami/0003_20_analysis.json",
+          "blob_sha": "aed4a24e9ee44b7501f23bfec3e6b1719533d4ab"
+        },
+        "00": {
+          "path": "docs/10_each_lore/0003_akai_kami_aoi_kami/0003_00_sources.json",
+          "blob_sha": "c9b2a55e56000fe7f564c5cac34c663247375c2d"
+        }
+      },
+      "legacy_review_dir_tree_sha": "980faae9bfcb2f8882e64690922a7e8ae6c05729",
+      "migration_kind": "fresh_review"
+    },
+    "0005": {
+      "legacy_status": {
+        "10": "完了",
+        "20": "完了",
+        "00": "完了"
+      },
+      "legacy_review_seq": 4,
+      "legacy_checkpoint": {
+        "10": "087208f862a6995a343a4ac3b15be3148869380e",
+        "20": "b7db48b938b2d81f277336efa3c5ec99d53f2202",
+        "00": "1f14dc101707a5028f6ff5d025b92a57cf291739"
+      },
+      "baseline_canonical": {
+        "10": {
+          "path": "docs/10_each_lore/0005_murasaki_no_kagami/0005_10_contents.json",
+          "blob_sha": "9903a93c5c0f0fcdc44aa6a610a5819c2ec93d9e"
+        },
+        "20": {
+          "path": "docs/10_each_lore/0005_murasaki_no_kagami/0005_20_analysis.json",
+          "blob_sha": "234aa987928b36e4fd5777757a8465f7ef6e1949"
+        },
+        "00": {
+          "path": "docs/10_each_lore/0005_murasaki_no_kagami/0005_00_sources.json",
+          "blob_sha": "b7b6f2bd7a1380975c0cc2ec06bc54bbaf670e57"
+        }
+      },
+      "legacy_review_dir_tree_sha": "23fa66762b05cb316c13fc901ed68570abba432b",
+      "migration_kind": "fresh_review"
+    },
+    "0006": {
+      "legacy_status": {
+        "10": "完了",
+        "20": "完了",
+        "00": "完了"
+      },
+      "legacy_review_seq": 5,
+      "legacy_checkpoint": {
+        "10": "42e659ad3627c9125d2cc5600c353a3638994576",
+        "20": "42e0a03cf629b07d95b42432f8fbd4dc124651ae",
+        "00": "678355cbaed44acbdb846543e79514b720ba6cd5"
+      },
+      "baseline_canonical": {
+        "10": {
+          "path": "docs/10_each_lore/0006_merry_san_no_denwa/0006_10_contents.json",
+          "blob_sha": "d406fc509f16ddf4a0a99157dac7599544ae1014"
+        },
+        "20": {
+          "path": "docs/10_each_lore/0006_merry_san_no_denwa/0006_20_analysis.json",
+          "blob_sha": "2b96e74419ca307008fdbfc9ffd085571e7b2a66"
+        },
+        "00": {
+          "path": "docs/10_each_lore/0006_merry_san_no_denwa/0006_00_sources.json",
+          "blob_sha": "8eb12c4a27a23592a9de4d77b34aebdd65422c61"
+        }
+      },
+      "legacy_review_dir_tree_sha": "0d6aaa3cb9b5ac36c954d194eaf2bcabe9d7f2d1",
+      "migration_kind": "fresh_review"
+    },
+    "0011": {
+      "legacy_status": {
+        "10": "完了",
+        "20": "完了",
+        "00": "完了"
+      },
+      "legacy_review_seq": 6,
+      "legacy_checkpoint": {
+        "10": "5ed2db70671ebb1b3a0eda57fe3ac863287dc4d0",
+        "20": "6378230be1a24b6e35cb0e2f59032f12279b43ca",
+        "00": "54a4cef6844e1da4ca45b206c776bb03106c1fe2"
+      },
+      "baseline_canonical": {
+        "10": {
+          "path": "docs/10_each_lore/0011_kokkuri_san/0011_10_contents.json",
+          "blob_sha": "f58c7b50208f82ba089473071f6311858c383251"
+        },
+        "20": {
+          "path": "docs/10_each_lore/0011_kokkuri_san/0011_20_analysis.json",
+          "blob_sha": "fae11fef6727b3529a481b7dff0acfb7b080cf52"
+        },
+        "00": {
+          "path": "docs/10_each_lore/0011_kokkuri_san/0011_00_sources.json",
+          "blob_sha": "df4227a271dcc15bb007314c48f61215bcb94a12"
+        }
+      },
+      "legacy_review_dir_tree_sha": "0dc09f29ba50b23acaf8fb407fc2c6c894a8753d",
+      "migration_kind": "fresh_review"
+    },
+    "0019": {
+      "legacy_status": {
+        "10": "完了",
+        "20": "完了",
+        "00": "完了"
+      },
+      "legacy_review_seq": 4,
+      "legacy_checkpoint": {
+        "10": "2d078e4da3744ebc84f66875749eaa4c274d9493",
+        "20": "c8e780096b6576bfbe3a8d231be4ef4892d23dec",
+        "00": "2d391fd014a849a4dfc199453dd30c56b2dbcd55"
+      },
+      "baseline_canonical": {
+        "10": {
+          "path": "docs/10_each_lore/0019_chiisai_ojisan/0019_10_contents.json",
+          "blob_sha": "d4f35b32a96feef3ae7da855441bbfc27eb0631a"
+        },
+        "20": {
+          "path": "docs/10_each_lore/0019_chiisai_ojisan/0019_20_analysis.json",
+          "blob_sha": "002da1f26e7a97f222baf3e1a28792e12944138e"
+        },
+        "00": {
+          "path": "docs/10_each_lore/0019_chiisai_ojisan/0019_00_sources.json",
+          "blob_sha": "ccc3eaeeee5e1ad036a6623a2318b2cef3314277"
+        }
+      },
+      "legacy_review_dir_tree_sha": "761971bd2cd60ee9c7690a2080d9ad89d5749753",
+      "migration_kind": "fresh_review"
+    },
+    "0024": {
+      "legacy_status": {
+        "10": "完了",
+        "20": "完了",
+        "00": "完了"
+      },
+      "legacy_review_seq": 5,
+      "legacy_checkpoint": {
+        "10": "e06c8c1cdfa5bedde45ddbc47134aba8177b6f7d",
+        "20": "e3fe5335bcf56841305e625f98a998e0c2553797",
+        "00": "d5af2bd2b207a8fa2fd27d841605b63d27889030"
+      },
+      "baseline_canonical": {
+        "10": {
+          "path": "docs/10_each_lore/0024_kofuku_no_tegami/0024_10_contents.json",
+          "blob_sha": "c48fe01a4a4773990e93b8b026b9d02ea308cd8c"
+        },
+        "20": {
+          "path": "docs/10_each_lore/0024_kofuku_no_tegami/0024_20_analysis.json",
+          "blob_sha": "2f0a7d8a50cd3c54fb7ddcbcfd145e807aa2c017"
+        },
+        "00": {
+          "path": "docs/10_each_lore/0024_kofuku_no_tegami/0024_00_sources.json",
+          "blob_sha": "a8e748b53f0f4c944eb3bd888ab646aa8a27b623"
+        }
+      },
+      "legacy_review_dir_tree_sha": "ac04ac1a83356480d5e991a28eb886ef67a6439c",
+      "migration_kind": "fresh_review"
+    },
+    "0025": {
+      "legacy_status": {
+        "10": "完了",
+        "20": "完了",
+        "00": "完了"
+      },
+      "legacy_review_seq": 2,
+      "legacy_checkpoint": {
+        "10": "d40fdc9290ef0198cce2db59fe690f66311282c2",
+        "20": "fcd7311111aef7464ba811a907ba320abeb9314e",
+        "00": "1e1e49950b4e7c6610e58b84e048c79129c31893"
+      },
+      "baseline_canonical": {
+        "10": {
+          "path": "docs/10_each_lore/0025_fuko_no_tegami/0025_10_contents.json",
+          "blob_sha": "dc50a978395680dac79421983cbb7fd2fb26262f"
+        },
+        "20": {
+          "path": "docs/10_each_lore/0025_fuko_no_tegami/0025_20_analysis.json",
+          "blob_sha": "03fb7dcec984ea065a9899af993aee38890b02c3"
+        },
+        "00": {
+          "path": "docs/10_each_lore/0025_fuko_no_tegami/0025_00_sources.json",
+          "blob_sha": "41ae25b986a7dac817505bf44267b1106fc14d87"
+        }
+      },
+      "legacy_review_dir_tree_sha": "145071df423a9926e46435fca8e2f5b2d13070e2",
+      "migration_kind": "fresh_review"
+    },
+    "0059": {
+      "legacy_status": {
+        "10": "完了",
+        "20": "完了",
+        "00": "完了"
+      },
+      "legacy_review_seq": 7,
+      "legacy_checkpoint": {
+        "10": "7ab66669a49fd9a37de4bdc5e0e45b6f4d40718a",
+        "20": "0d4ccc2f1013f41a86d19b648485975ce5f8f54a",
+        "00": "d655821bea4f977a8881c5e7b6f1ce8632d11712"
+      },
+      "baseline_canonical": {
+        "10": {
+          "path": "docs/10_each_lore/0059_mizorogaike_ghost_taxi/0059_10_contents.json",
+          "blob_sha": "8b1b273b8e3049b3fd699543b0933aa83ff1f8f4"
+        },
+        "20": {
+          "path": "docs/10_each_lore/0059_mizorogaike_ghost_taxi/0059_20_analysis.json",
+          "blob_sha": "8f830310e1302716314dd506529eedddf02a98ae"
+        },
+        "00": {
+          "path": "docs/10_each_lore/0059_mizorogaike_ghost_taxi/0059_00_sources.json",
+          "blob_sha": "8653ffdbc3fa93ba77a01fa97a7819a371f321c3"
+        }
+      },
+      "legacy_review_dir_tree_sha": "67c8e53e7048b4821de25b9ee14d379dd7ba2599",
+      "migration_kind": "fresh_review"
+    },
+    "0060": {
+      "legacy_status": {
+        "10": "完了",
+        "20": "完了",
+        "00": "完了"
+      },
+      "legacy_review_seq": 3,
+      "legacy_checkpoint": {
+        "10": "9be789ad49c73aa9f26b2ae5e8d28d6c834b47c0",
+        "20": "ae451d04a1d11cd28ac4f5d62822e343601a75fd",
+        "00": "3e2ffcbe8bfcb37a7da400026b465be5e6b4c9a0"
+      },
+      "baseline_canonical": {
+        "10": {
+          "path": "docs/10_each_lore/0060_ghost_taxi/0060_10_contents.json",
+          "blob_sha": "02a8f29a429cabff3f3f833e350ab7a2aa9a0302"
+        },
+        "20": {
+          "path": "docs/10_each_lore/0060_ghost_taxi/0060_20_analysis.json",
+          "blob_sha": "5237e0be28c18d55a61689ec191a08261569e31e"
+        },
+        "00": {
+          "path": "docs/10_each_lore/0060_ghost_taxi/0060_00_sources.json",
+          "blob_sha": "5040efb4c997fe3e80ab010fe9b6d8b6943a0f9e"
+        }
+      },
+      "legacy_review_dir_tree_sha": "1508bdeebbc098b898cafcf2383ab5841a060ed1",
+      "migration_kind": "fresh_review"
+    },
+    "0081": {
+      "legacy_status": {
+        "10": "完了",
+        "20": "要修正",
+        "00": "完了"
+      },
+      "legacy_review_seq": 2,
+      "legacy_checkpoint": {
+        "10": "59f67b19c3f26de2ad54b0a36128019888679c31",
+        "20": "b4a54bd5f0047132f893fa6692d225a2fab3fb5b",
+        "00": "f12bb1adea5cec1e96a889bd54743eb85f937d99"
+      },
+      "baseline_canonical": {
+        "10": {
+          "path": "docs/10_each_lore/0081_pierce_white_thread/0081_10_contents.json",
+          "blob_sha": "c2dd5fc004fe299a2216a4768778255722b6793f"
+        },
+        "20": {
+          "path": "docs/10_each_lore/0081_pierce_white_thread/0081_20_analysis.json",
+          "blob_sha": "310a037ebcf17f8f0183290ed1d6e223582c0d3f"
+        },
+        "00": {
+          "path": "docs/10_each_lore/0081_pierce_white_thread/0081_00_sources.json",
+          "blob_sha": "8d336d27778df63dbdcd1699f3281e13da2110fc"
+        }
+      },
+      "legacy_review_dir_tree_sha": "5e70dccee2a3e83354888754bda55ac8cd2d295a",
+      "migration_kind": "requires_correction"
+    },
+    "0178": {
+      "legacy_status": {
+        "10": "完了",
+        "20": "要修正",
+        "00": "完了"
+      },
+      "legacy_review_seq": 7,
+      "legacy_checkpoint": {
+        "10": "d1afdfeca8f2bea8bed183a5772edd805f98bb6c",
+        "20": "eea94d6b0c8a0183b43a8377466d843233b522ef",
+        "00": "6aca480d5446aff7109c8ccacda5186529be11b9"
+      },
+      "baseline_canonical": {
+        "10": {
+          "path": "docs/10_each_lore/0178_saruyume/0178_10_contents.json",
+          "blob_sha": "328e7f3b6d8c0f7f0bde5e792830a0df2e48a9d7"
+        },
+        "20": {
+          "path": "docs/10_each_lore/0178_saruyume/0178_20_analysis.json",
+          "blob_sha": "ccc01e627fa578a6270551255cbaad9874c84aad"
+        },
+        "00": {
+          "path": "docs/10_each_lore/0178_saruyume/0178_00_sources.json",
+          "blob_sha": "14b043f2a5ff94709f2d3f1b6d712d817640c32a"
+        }
+      },
+      "legacy_review_dir_tree_sha": "15a204a4ce0897d5095d8c2447f08587b1391450",
+      "migration_kind": "requires_correction"
+    },
+    "0179": {
+      "legacy_status": {
+        "10": "完了",
+        "20": "完了",
+        "00": "完了"
+      },
+      "legacy_review_seq": 13,
+      "legacy_checkpoint": {
+        "10": "ca75922415fb45df4cf2cf03bc3ae4f91528c7be",
+        "20": "cf6db2f4423b0a5601b8d3d92137e4ad864ef285",
+        "00": "6b7bfe60124c3b3f4aba8292f176df137637d80a"
+      },
+      "baseline_canonical": {
+        "10": {
+          "path": "docs/10_each_lore/0179_kunekune/0179_10_contents.json",
+          "blob_sha": "39b277c9fae183005f97d9847a17e942c2e2f09f"
+        },
+        "20": {
+          "path": "docs/10_each_lore/0179_kunekune/0179_20_analysis.json",
+          "blob_sha": "a4ce8d4a286ce3baef71c2e4fb7267c5add21f0e"
+        },
+        "00": {
+          "path": "docs/10_each_lore/0179_kunekune/0179_00_sources.json",
+          "blob_sha": "582105b1c2207cfda2599dae88d9c897b33a9676"
+        }
+      },
+      "legacy_review_dir_tree_sha": "c14ea660a56058b06c43eeba62d37df96ae2d533",
+      "migration_kind": "fresh_review"
+    },
+    "0180": {
+      "legacy_status": {
+        "10": "完了",
+        "20": "完了",
+        "00": "完了"
+      },
+      "legacy_review_seq": 2,
+      "legacy_checkpoint": {
+        "10": "324c67630de7580c4bf1155e27c7d9ba98a789ea",
+        "20": "923db9271c41faf110b899611fac4ad5fd78a747",
+        "00": "2f0ea85307965bbff293a029ff314ecd708ae598"
+      },
+      "baseline_canonical": {
+        "10": {
+          "path": "docs/10_each_lore/0180_kisaragi_station/0180_10_contents.json",
+          "blob_sha": "53daa90b35bc1253eda1b0667a56b2a9ad17c6f7"
+        },
+        "20": {
+          "path": "docs/10_each_lore/0180_kisaragi_station/0180_20_analysis.json",
+          "blob_sha": "035f2a9612e8359e71ab7c54d756a5f5256cdb27"
+        },
+        "00": {
+          "path": "docs/10_each_lore/0180_kisaragi_station/0180_00_sources.json",
+          "blob_sha": "d29b5cac465f30ebb909315c7d7c59a9d128f2a9"
+        }
+      },
+      "legacy_review_dir_tree_sha": "8dbcbeed48c759bde73aae3e20039768158bdf5a",
+      "migration_kind": "fresh_review"
+    },
+    "0181": {
+      "legacy_status": {
+        "10": "完了",
+        "20": "完了",
+        "00": "完了"
+      },
+      "legacy_review_seq": 7,
+      "legacy_checkpoint": {
+        "10": "a91ef33b8a340d55cbdd8fdddcc641f9ef813eaf",
+        "20": "18b826589674d257ba258cf493ba7836285ab98c",
+        "00": "d0e252cd18bf4f5180ad42770bda3ddda9a5cd2d"
+      },
+      "baseline_canonical": {
+        "10": {
+          "path": "docs/10_each_lore/0181_kotoribako/0181_10_contents.json",
+          "blob_sha": "a05eedb02959a6ec3e5b781dc0d60d141e390994"
+        },
+        "20": {
+          "path": "docs/10_each_lore/0181_kotoribako/0181_20_analysis.json",
+          "blob_sha": "62deb6d6c5929172034355dffbe4e85194494c8a"
+        },
+        "00": {
+          "path": "docs/10_each_lore/0181_kotoribako/0181_00_sources.json",
+          "blob_sha": "601fc129611a0940098c400cf208a3914f1654a1"
+        }
+      },
+      "legacy_review_dir_tree_sha": "5b58a8d2899be2c2e87e52202e0a1de3ed217c12",
+      "migration_kind": "fresh_review"
+    },
+    "0188": {
+      "legacy_status": {
+        "10": "完了",
+        "20": "完了",
+        "00": "完了"
+      },
+      "legacy_review_seq": 6,
+      "legacy_checkpoint": {
+        "10": "0d7271c8c93f7bb5784c60d273f5044496607ef4",
+        "20": "ed2be1f9a6b1fb82412e653c964b2783185ef24a",
+        "00": "44b49b2452d843fc61eb65081c1e45c06689c913"
+      },
+      "baseline_canonical": {
+        "10": {
+          "path": "docs/10_each_lore/0188_hasshakusama/0188_10_contents.json",
+          "blob_sha": "76a5101aa939a7332a3f1478f5dff9417318cc0e"
+        },
+        "20": {
+          "path": "docs/10_each_lore/0188_hasshakusama/0188_20_analysis.json",
+          "blob_sha": "d610430c51a624c12ebbdb69aacb47d207a2706f"
+        },
+        "00": {
+          "path": "docs/10_each_lore/0188_hasshakusama/0188_00_sources.json",
+          "blob_sha": "d8ba020b3aea68520cc18145b0c3abb9fb4bbb4d"
+        }
+      },
+      "legacy_review_dir_tree_sha": "05b4f17d4bb530626142348776bf4ec9153e167c",
+      "migration_kind": "fresh_review"
+    },
+    "0198": {
+      "legacy_status": {
+        "10": "完了",
+        "20": "完了",
+        "00": "完了"
+      },
+      "legacy_review_seq": 7,
+      "legacy_checkpoint": {
+        "10": "cce1c342a5f565de50ba7f522478358ed727e08c",
+        "20": "cc5ce36e64261471f17c994af9267cf278b0c310",
+        "00": "35b0f323d47346acb007fe6dbbaeb9e60d73c295"
+      },
+      "baseline_canonical": {
+        "10": {
+          "path": "docs/10_each_lore/0198_hitori_kakurenbo/0198_10_contents.json",
+          "blob_sha": "d5644a89e652dd3fe71c2cabe0525e1a774ee1e1"
+        },
+        "20": {
+          "path": "docs/10_each_lore/0198_hitori_kakurenbo/0198_20_analysis.json",
+          "blob_sha": "39c3637c298ff06249a6d0d125007514df27d601"
+        },
+        "00": {
+          "path": "docs/10_each_lore/0198_hitori_kakurenbo/0198_00_sources.json",
+          "blob_sha": "333a22f79fa3919e6d8cefa23d085ac5d3a85436"
+        }
+      },
+      "legacy_review_dir_tree_sha": "a16c9113ce94402ca3d58bf4891b99d7e4aa04dd",
+      "migration_kind": "fresh_review"
+    },
+    "0225": {
+      "legacy_status": {
+        "10": "完了",
+        "20": "完了",
+        "00": "完了"
+      },
+      "legacy_review_seq": 1,
+      "legacy_checkpoint": {
+        "10": "d0d3d819b21be25378a1a9f71c98055b7b65b303",
+        "20": "a612b2ed34363d8ed92a7da1c920a7fe7c70db08",
+        "00": "debc738178c88e530fc24328d07208584ca36ad4"
+      },
+      "baseline_canonical": {
+        "10": {
+          "path": "docs/10_each_lore/0225_jaguchi_kara_ponjuice/0225_10_contents.json",
+          "blob_sha": "eef142b743eacabb3bc4341be9f91dbf36cf2077"
+        },
+        "20": {
+          "path": "docs/10_each_lore/0225_jaguchi_kara_ponjuice/0225_20_analysis.json",
+          "blob_sha": "2cb9bcf27408250daa4c965b2eee70e706616d81"
+        },
+        "00": {
+          "path": "docs/10_each_lore/0225_jaguchi_kara_ponjuice/0225_00_sources.json",
+          "blob_sha": "6057748bcf28843921c57b7a27694dd1683f4e2e"
+        }
+      },
+      "legacy_review_dir_tree_sha": "7c5f277c239ee1786441b71e3c584de4a2985e5b",
+      "migration_kind": "fresh_review"
+    },
+    "0250": {
+      "legacy_status": {
+        "10": "完了",
+        "20": "要修正",
+        "00": "要修正"
+      },
+      "legacy_review_seq": 4,
+      "legacy_checkpoint": {
+        "10": "12236527ffc7839fc9fc1642dd6df504883fadbb",
+        "20": "07b7576ef68dffc2e083a16facef36c51b1615af",
+        "00": "b29755f3037ea68b7f69cd9a1a30a66b06ef5ae1"
+      },
+      "baseline_canonical": {
+        "10": {
+          "path": "docs/10_each_lore/0250_shichinin_misaki/0250_10_contents.json",
+          "blob_sha": "4f1349d15a641b4fecba635b7c865dcb8ff0bf8d"
+        },
+        "20": {
+          "path": "docs/10_each_lore/0250_shichinin_misaki/0250_20_analysis.json",
+          "blob_sha": "19b5884f9376476ead57572aebdcb204e4eb5d4a"
+        },
+        "00": {
+          "path": "docs/10_each_lore/0250_shichinin_misaki/0250_00_sources.json",
+          "blob_sha": "c963621095e56873a525d56f965508adbb0374bd"
+        }
+      },
+      "legacy_review_dir_tree_sha": "b47dc5e03f528583d7dc372847ee63f0093eea19",
+      "migration_kind": "requires_correction"
+    },
+    "0275": {
+      "legacy_status": {
+        "10": "完了",
+        "20": "完了",
+        "00": "完了"
+      },
+      "legacy_review_seq": 4,
+      "legacy_checkpoint": {
+        "10": "5d3bfaeffa4fc214fbcaf1b96ae6dcae11cc9642",
+        "20": "d912e070c6bbb7d2ee6f4ef31cf1fe03770b4391",
+        "00": "6071e2546ab77fc06d85a9c160396833fa517d0a"
+      },
+      "baseline_canonical": {
+        "10": {
+          "path": "docs/10_each_lore/0275_bandaisan_tenaga_ashinaga/0275_10_contents.json",
+          "blob_sha": "8856edeee30f8a8210b266f0ed31084b4bfa6b00"
+        },
+        "20": {
+          "path": "docs/10_each_lore/0275_bandaisan_tenaga_ashinaga/0275_20_analysis.json",
+          "blob_sha": "adaff94d813b9813cecee2e8286eaba3d2fc3881"
+        },
+        "00": {
+          "path": "docs/10_each_lore/0275_bandaisan_tenaga_ashinaga/0275_00_sources.json",
+          "blob_sha": "27de8129eb1cdd0859d61d2a5472b65780a54cac"
+        }
+      },
+      "legacy_review_dir_tree_sha": "6dbc5c02098ead4608ba14efdc1e81f50126b8ef",
+      "migration_kind": "fresh_review"
+    },
+    "0309": {
+      "legacy_status": {
+        "10": "完了",
+        "20": "完了",
+        "00": "要修正"
+      },
+      "legacy_review_seq": 4,
+      "legacy_checkpoint": {
+        "10": "e96fca7471109671c01882e12a3970907ca69cfa",
+        "20": "71b6b0059809f48d79266b968d2ab92dc3dd0281",
+        "00": "3a8cac03704d795e9477db9ef432b0b7cfd8e727"
+      },
+      "baseline_canonical": {
+        "10": {
+          "path": "docs/10_each_lore/0309_uryujima/0309_10_contents.json",
+          "blob_sha": "188260ac44efa24f660cec54dcab656e47142608"
+        },
+        "20": {
+          "path": "docs/10_each_lore/0309_uryujima/0309_20_analysis.json",
+          "blob_sha": "eb3b7b92169971e0f49a50f61055487de0da8100"
+        },
+        "00": {
+          "path": "docs/10_each_lore/0309_uryujima/0309_00_sources.json",
+          "blob_sha": "53679d03d722642e0ded6b505ddf773eff783dcf"
+        }
+      },
+      "legacy_review_dir_tree_sha": "6dd95cf9fea71896ab3b027f2130ac96107016fd",
+      "migration_kind": "requires_correction"
+    },
+    "0319": {
+      "legacy_status": {
+        "10": "完了",
+        "20": "完了",
+        "00": "完了"
+      },
+      "legacy_review_seq": 1,
+      "legacy_checkpoint": {
+        "10": "953a06e9b285f7613de8435cd1060840e8d13f72",
+        "20": "b34d18ef0860df7bffbe7579bf619af39615a3c8",
+        "00": "7112f823ee54109fd46c8e9017533ee0777ec5be"
+      },
+      "baseline_canonical": {
+        "10": {
+          "path": "docs/10_each_lore/0319_senjogahara_daija_oomukade/0319_10_contents.json",
+          "blob_sha": "39e2cf555045e3198d0b43e85f1ca32a6c9aaf95"
+        },
+        "20": {
+          "path": "docs/10_each_lore/0319_senjogahara_daija_oomukade/0319_20_analysis.json",
+          "blob_sha": "e126df03d0603f76901461c76ea6e9d0afb61feb"
+        },
+        "00": {
+          "path": "docs/10_each_lore/0319_senjogahara_daija_oomukade/0319_00_sources.json",
+          "blob_sha": "a9654c431df1771fc0585353429d763ebf395f66"
+        }
+      },
+      "legacy_review_dir_tree_sha": "cba80143fe8990a39dca5532bf6d03dcbb98de4d",
+      "migration_kind": "fresh_review"
+    },
+    "0349": {
+      "legacy_status": {
+        "10": "要修正",
+        "20": "要修正",
+        "00": "要修正"
+      },
+      "legacy_review_seq": 4,
+      "legacy_checkpoint": {
+        "10": "925393c5849181249f29c65564d405c2704f3e32",
+        "20": "68a65f510765386d2ba6251bcbac6d60b735ead9",
+        "00": "ae7a8b0a28047bc455cea57f47f207866a420c3c"
+      },
+      "baseline_canonical": {
+        "10": {
+          "path": "docs/10_each_lore/0349_sony_timer/0349_10_contents.json",
+          "blob_sha": "963f00a5adf50a71b9d814274cf17011677c91bd"
+        },
+        "20": {
+          "path": "docs/10_each_lore/0349_sony_timer/0349_20_analysis.json",
+          "blob_sha": "3a4a21f93e3294e678b0d302ad41333e7b5b109c"
+        },
+        "00": {
+          "path": "docs/10_each_lore/0349_sony_timer/0349_00_sources.json",
+          "blob_sha": "f970065647f8501f0bdbc6a1f72e0a358e49d64c"
+        }
+      },
+      "legacy_review_dir_tree_sha": "a0c5aef1fe0dea83f7e623c36da4b64dd0d2f81d",
+      "migration_kind": "requires_correction"
+    },
+    "0356": {
+      "legacy_status": {
+        "10": "再レビュー待",
+        "20": "再レビュー待",
+        "00": "再レビュー待"
+      },
+      "legacy_review_seq": 3,
+      "legacy_checkpoint": {
+        "10": "b1544358eff65fdf7966b62ac16566e760956593",
+        "20": "31f6872ab7654b122b98951f1dc21218db6ef215",
+        "00": "5d58976c866d6ef78c56595e71be499571e3ff87"
+      },
+      "baseline_canonical": {
+        "10": {
+          "path": "docs/10_each_lore/0356_colonel_sanders_no_noroi/0356_10_contents.json",
+          "blob_sha": "57a6bd0cea0478082e940f8241aaff6b4824391a"
+        },
+        "20": {
+          "path": "docs/10_each_lore/0356_colonel_sanders_no_noroi/0356_20_analysis.json",
+          "blob_sha": "17ccae6705b2ad83af5abf78617351898fb5679c"
+        },
+        "00": {
+          "path": "docs/10_each_lore/0356_colonel_sanders_no_noroi/0356_00_sources.json",
+          "blob_sha": "4e16137424796ff4602b4f70d1461fd9bf1cd154"
+        }
+      },
+      "legacy_review_dir_tree_sha": "3a81c4d334d396bb5ddb8701f04076305c73e5e6",
+      "migration_kind": "fresh_review_stale"
+    },
+    "0362": {
+      "legacy_status": {
+        "10": "完了",
+        "20": "完了",
+        "00": "完了"
+      },
+      "legacy_review_seq": 7,
+      "legacy_checkpoint": {
+        "10": "604be3a3b0e58de199d887a9dc09e994dcaef27f",
+        "20": "08042965244184af027551000202c1f1fb308efe",
+        "00": "6eb3ce7fc45b4402c12a78fcb08055ed5052e1b0"
+      },
+      "baseline_canonical": {
+        "10": {
+          "path": "docs/10_each_lore/0362_toyokawa_shinkin_bank_run/0362_10_contents.json",
+          "blob_sha": "cbd7ac01d00d6bfd893c026fdb9e97768b6a280b"
+        },
+        "20": {
+          "path": "docs/10_each_lore/0362_toyokawa_shinkin_bank_run/0362_20_analysis.json",
+          "blob_sha": "949a23d6de1be10f751251ee73cf1132716b4a96"
+        },
+        "00": {
+          "path": "docs/10_each_lore/0362_toyokawa_shinkin_bank_run/0362_00_sources.json",
+          "blob_sha": "a2dfa64d7a6c1615cc09f51f3080667c7f0b18b2"
+        }
+      },
+      "legacy_review_dir_tree_sha": "5e99dbdb47ff7fd085c8c1b1086d60b2b58089c5",
+      "migration_kind": "fresh_review"
+    },
+    "0363": {
+      "legacy_status": {
+        "10": "再レビュー待",
+        "20": "再レビュー待",
+        "00": "再レビュー待"
+      },
+      "legacy_review_seq": 5,
+      "legacy_checkpoint": {
+        "10": "c750272e1d4173c03b2ce49371cf616c1ab881ed",
+        "20": "c26d9ddbf0b596cbe93728b9b03055ca7a0c6472",
+        "00": "c61c7ce873f448d5dc80bc14e16d339ebeba5ff2"
+      },
+      "baseline_canonical": {
+        "10": {
+          "path": "docs/10_each_lore/0363_1973_toilet_paper_shortage_rumor/0363_10_contents.json",
+          "blob_sha": "4e9e3b63fdf1b1beb8ce6ff739255a20d1a169d6"
+        },
+        "20": {
+          "path": "docs/10_each_lore/0363_1973_toilet_paper_shortage_rumor/0363_20_analysis.json",
+          "blob_sha": "4a87b514ff324ea123452fac923f48ab45b193ba"
+        },
+        "00": {
+          "path": "docs/10_each_lore/0363_1973_toilet_paper_shortage_rumor/0363_00_sources.json",
+          "blob_sha": "60136f9b0a89c0ff9e0e06b6828667b46dc81830"
+        }
+      },
+      "legacy_review_dir_tree_sha": "6cb73528f44f253f17d042d8998ef59099363083",
+      "migration_kind": "fresh_review_stale"
+    },
+    "0365": {
+      "legacy_status": {
+        "10": "再レビュー待",
+        "20": "再レビュー待",
+        "00": "完了"
+      },
+      "legacy_review_seq": 5,
+      "legacy_checkpoint": {
+        "10": "5285c297d82b3fea269273d21b624f5c7072af63",
+        "20": "56aaa634e42e919483638c76a392153af2e0fd3a",
+        "00": "34807418e1f128597c2b5db0ae7531b978c7cb50"
+      },
+      "baseline_canonical": {
+        "10": {
+          "path": "docs/10_each_lore/0365_kanto_earthquake_poison_well_rumor/0365_10_contents.json",
+          "blob_sha": "02e9e6e40b001a476cc5486e77c2ede780990efa"
+        },
+        "20": {
+          "path": "docs/10_each_lore/0365_kanto_earthquake_poison_well_rumor/0365_20_analysis.json",
+          "blob_sha": "354da52f86fc4a5e310fba96eca30ae0fd083427"
+        },
+        "00": {
+          "path": "docs/10_each_lore/0365_kanto_earthquake_poison_well_rumor/0365_00_sources.json",
+          "blob_sha": "8e1177a272deaed4ce6fc7fb6a0f4ce33f5b5c93"
+        }
+      },
+      "legacy_review_dir_tree_sha": "e3ed7f685bf4a4a7280cc1cbea3a03083a17083a",
+      "migration_kind": "fresh_review_stale"
+    }
+  }
+}
