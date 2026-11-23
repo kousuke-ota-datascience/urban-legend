@@ -115,6 +115,7 @@ def test_next_seq_shared_across_complete_cycles(monkeypatch):
     )
     snapshot = review_state.ReviewSnapshot("0001", {}, facts, ())
     monkeypatch.setattr(review_writer, "load_entry_review_state", lambda _: snapshot)
+    monkeypatch.setattr(review_writer, "legacy_review_seq", lambda _: 0)
     assert review_writer._next_review_seq("0001") == 3
 
 
