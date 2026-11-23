@@ -1,6 +1,8 @@
 """Notion I/O for the lore-entry control plane only."""
 from __future__ import annotations
 
+from src.migration.epoch import require_shadow_controlplane
+
 from dataclasses import dataclass
 import hashlib
 import json
@@ -9,7 +11,7 @@ from typing import Any, Iterable
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
-DEFAULT_DATA_SOURCE_ID = "3dee5855-be39-807e-90c7-000bb6d72cd3"
+# The legacy source is deliberately not a fallback in the new repository.
 NOTION_VERSION = os.environ.get("NOTION_VERSION", "2025-09-03")
 ALLOWED_STATUSES = frozenset(
     {"未", "調査中", "レビュー待", "レビュー中", "要修正", "再レビュー待", "完了", "－（対象外）"}
@@ -116,9 +118,7 @@ def _fingerprint(row: dict) -> str:
 
 
 def _list_rows() -> list[dict]:
-    ds = os.environ.get(
-        "NOTION_CONTROLPLANE_DATA_SOURCE_ID", DEFAULT_DATA_SOURCE_ID
-    ).replace("-", "")
+    ds = require_shadow_controlplane()
     results: list[dict] = []
     cursor: str | None = None
     while True:
