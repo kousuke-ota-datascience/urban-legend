@@ -16,6 +16,7 @@ from urllib.parse import urlsplit
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 MANIFEST_PATH = PROJECT_ROOT / "migration/20261123/manifest.json"
 OLD_CONTROLPLANE_ID = "3dee5855be39807e90c7000bb6d72cd3"
+EXPECTED_LEGACY_REVIEW_TREE_SHA = "ac67031892f83df65652428c3720a839104204f6"
 EXPECTED_REPOSITORY = "kousuke-ota-datascience/urban-legend"
 LEGACY_REVIEW_ROOT = PROJECT_ROOT / "reviews/10_each_lore"
 ACTIVE_REVIEW_ROOT = PROJECT_ROOT / "reviews/active/10_each_lore"
@@ -41,6 +42,10 @@ def read_manifest(path: Path | None = None) -> dict[str, Any]:
         raise MigrationGateError("migration manifest source baseline mismatch")
     if data.get("target_baseline_commit") != "7106d70967d14205e7a66c289e6ee26db8ea8ce3":
         raise MigrationGateError("migration manifest target baseline mismatch")
+    if data.get("legacy_review_tree_sha") != EXPECTED_LEGACY_REVIEW_TREE_SHA:
+        raise MigrationGateError("immutable legacy Review tree SHA mismatch")
+    if data.get("legacy_review_files_expected") != 351 or data.get("entry_count") != 27:
+        raise MigrationGateError("unexpected legacy Review/Entry inventory")
     entries = data.get("entries")
     if not isinstance(entries, dict) or len(entries) != 27:
         raise MigrationGateError("migration manifest must describe exactly 27 historical entries")
