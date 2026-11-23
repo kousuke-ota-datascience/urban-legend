@@ -16,6 +16,7 @@ import subprocess
 import sys
 from typing import Any, Mapping
 
+from src.migration.epoch import MigrationGateError, require_git_destination, require_production_preflight
 from src.orchestration.codex_cli import (
     CodexCLIRuntime,
     OrchestrationRuntime,
@@ -427,6 +428,7 @@ def _commit_review_cycle(write_result: Mapping[str, Any]) -> str:
     )
     commit_sha = _git(repo, "rev-parse", "HEAD")
     remote = _resolve_push_remote(repo)
+    require_git_destination(remote)
     _git(repo, "push", remote, "HEAD")
     return commit_sha
 
@@ -535,6 +537,24 @@ def run_entry_pipeline(
             review_cycles=0,
             reason_code="INVALID_ENTRY_ID",
         )
+
+    # Production safety gate must execute before ANY Workflow 90/Notion mutation.
+    # Injected runtimes are test harnesses and preserve deterministic unit tests.
+    if runtime is None:
+        try:
+            require_production_preflight(entry_id, _resolve_push_remote(ARTICLE_ROOT))
+        except (MigrationGateError, RuntimeError) as exc:
+            classification = EntryClassification(
+                entry_id, BLOCKED_STATE, "MIGRATION_PREFLIGHT_FAILED"
+            )
+            return _result(
+                entry_id,
+                classification,
+                result="BLOCKED",
+                review_cycles=0,
+                reason_code="MIGRATION_PREFLIGHT_FAILED",
+                messages=(str(exc),),
+            )
 
     initial_sync = sync_controlplane(entry_id)
     if initial_sync.get("result") not in {"PASS", "UPDATED"} or not initial_sync.get("verified"):
