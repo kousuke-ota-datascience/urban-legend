@@ -18,13 +18,14 @@ import sys
 import tempfile
 from typing import Any, Mapping
 
+from src.migration.epoch import legacy_review_seq
 from src.status_management.git_state import load_entry_git_state
 from src.status_management.review_state import load_entry_review_state
 from src.validation.schema_validator import validate_data
 from src.validation.validate_entry import validate_entry
 
 ARTICLE_ROOT = Path(__file__).resolve().parents[2]
-REVIEW_ROOT = ARTICLE_ROOT / "reviews/10_each_lore"
+REVIEW_ROOT = ARTICLE_ROOT / "reviews/active/10_each_lore"
 SCHEMA_ROOT = ARTICLE_ROOT / "docs/10_each_lore/0000_tutorial/schemas"
 ARTIFACTS = ("00", "10", "20")
 SCHEMAS = {
@@ -152,7 +153,12 @@ def _next_review_seq(entry_id: str) -> int:
             + json.dumps(incomplete, ensure_ascii=False, sort_keys=True)
         )
 
-    return max(by_seq, default=0) + 1
+    legacy_max = legacy_review_seq(entry_id)
+    if any(seq <= legacy_max for seq in by_seq):
+        raise RuntimeError(
+            f"active Review Seq must exceed immutable legacy boundary: {legacy_max}"
+        )
+    return max(max(by_seq, default=0), legacy_max) + 1
 
 
 def aggregate_verdict(findings: Any) -> str:
