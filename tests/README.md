@@ -15,13 +15,13 @@ This directory contains the formal regression suite for the redesigned lore-entr
 
 ## Run locally
 
-From `workspace/articles/f8fe59b49c2e1e/`:
+From the `urban-legend/` repository root:
 
 ```bash
 python -m pytest -q tests
 ```
 
-The GitHub Actions workflow `.github/workflows/article-f8fe59b49c2e1e-tests.yml` runs the same suite when relevant source, Schema, taxonomy, or test files change.
+The GitHub Actions workflow `.github/workflows/migration-tests.yml` checks immutable legacy provenance and runs the fixture suite for migration branches and pull requests.
 
 External Notion and GitHub services are not called by the fixture suite. I/O boundaries are replaced with deterministic fixtures / monkeypatches; end-to-end integration remains P1-E.
 
