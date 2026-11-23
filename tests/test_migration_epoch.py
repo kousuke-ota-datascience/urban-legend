@@ -125,3 +125,35 @@ def test_legacy_findings_require_explicit_remediation_before_execution(monkeypat
     monkeypatch.setenv("WORKFLOW_MIGRATION_TEST_MODE", "1")
     with pytest.raises(epoch.MigrationGateError, match="legacy Finding remediation"):
         epoch.require_production_preflight("0081", "origin")
+
+
+def test_workflow00_preflight_blocks_before_initial_notion_sync(monkeypatch):
+    from src.orchestration import entry_pipeline as pipeline
+
+    monkeypatch.setattr(pipeline, "_resolve_push_remote", lambda _root: "origin")
+
+    def deny(*_args):
+        raise epoch.MigrationGateError("manifest remains prepared")
+
+    def no_notions(*_args, **_kwargs):
+        raise AssertionError("Workflow 90 may not run before migration preflight")
+
+    monkeypatch.setattr(pipeline, "require_production_preflight", deny)
+    monkeypatch.setattr(pipeline, "sync_controlplane", no_notions)
+    result = pipeline.run_entry_pipeline("0001")
+    assert result.result == "BLOCKED"
+    assert result.reason_code == "MIGRATION_PREFLIGHT_FAILED"
+    assert not result.control_plane_synchronized
+
+
+def test_old_notion_data_source_cannot_be_accessed_via_new_client(monkeypatch):
+    from src.status_management import notion_controlplane
+
+    monkeypatch.delenv("NOTION_CONTROLPLANE_DATA_SOURCE_ID", raising=False)
+
+    def no_network(*_args, **_kwargs):
+        raise AssertionError("Notion must not be called before shadow validation")
+
+    monkeypatch.setattr(notion_controlplane, "_request", no_network)
+    with pytest.raises(epoch.MigrationGateError):
+        notion_controlplane._list_rows()
